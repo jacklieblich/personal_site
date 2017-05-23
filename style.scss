@@ -1,0 +1,153 @@
+	$background-color: rgb(12, 16, 33);
+	$closed-tab: rgb(53, 54, 61);
+	$def: rgb(242, 195, 0);
+	$method: rgb(246, 66, 0);
+	$code: rgb(255, 255, 255);
+	$link: rgb(105,141,197);
+	.light-mode > .text-editor{
+		$background-color: rgb(255, 255, 255);
+		$closed-tab: rgb(158, 158, 158);
+		$def: rgb(0, 0, 255);
+		$method: rgb(0, 0, 148);
+		$code: rgb(0, 0, 0);
+	}
+	html{
+		min-height: 100%;
+		height: 100%;
+		body{
+			height: 100%;
+			margin: 0;
+			a{
+				text-decoration: none;
+			}
+			
+			.tabs{
+				color: rgb(135,135,127);
+				.open{
+					color: $code;
+				}
+			}
+			.content{
+				padding-top: 40px;
+				padding-bottom: 10px;
+				height: 100%;
+				display: flex;
+				box-sizing: border-box;
+				width: 90%;
+				max-width: 1280px;
+				margin: 0 auto;
+				.left{
+					width: 30%;
+					text-align: center;
+					img{
+						width: 40%;
+						border-radius: 50%;
+						margin: 0 auto 20px;
+						display: block;
+					}
+					a{
+						font-family: 'Roboto', sans-serif;
+						margin: 10px;
+						display: block;
+						font-size: 16px;
+						color: $link;
+						&.name{
+							font-size: 24px;
+							margin-bottom: 30px;
+						}
+					}
+				}
+				.right{
+					width: 70%;
+					display: flex;
+					flex-direction: column;
+					.header{
+						padding-left: 5%;
+						h1{
+							margin-top: 0;
+							font-family: 'Roboto', sans-serif;
+							text-align: center;
+						}
+						p{
+							font-family: 'Open Sans', sans-serif;
+							text-align: left;
+						}
+					}
+					.text-editor{
+						background-color: $background-color;
+						width: 90%;
+						margin: 0 auto;
+						font-family: 'Monospace', 'Consolas', 'Menlo-Regular';
+						font-size: 14px;
+						overflow: scroll;
+						height: 100%;
+						border-radius: 4px;
+						.tabs{
+							display: flex;
+							background-color: black;
+							padding-top: 5px;
+							justify-content: space-around;
+							div{
+								background-color: $closed-tab;
+								height: 40px;
+								width: 33%;
+								position: relative;
+								text-align: center;
+								border-radius: 4px 4px 0 0;
+								&.open{
+									background-color: $background-color;
+								}
+								span{
+									position: absolute;
+									display: block;
+									left: 0;
+									right: 0;
+									top: 13px;
+									margin: auto;
+								}
+							}
+						}
+						.expanded{
+							padding-top: 5px;
+							padding-left: 20px;
+							padding-right: 20px;
+							p{
+								margin-left: 20px;
+								color: white;
+								font-family: 'Monospace', 'Consolas', 'Menlo-Regular';
+								font-size: 14px;
+							}
+							> div{
+								display: none;
+								&.open{
+									display: block;
+								}
+							}
+							.project{
+								padding-left: 20px;
+							}
+							.def{
+								color: $def;
+							}
+							.method{
+								color: $method;
+							}
+							.code{
+								color: $code;
+								padding-left: 20px;
+								display: block;
+							}
+							.link{
+								color: $link;
+							}
+							a{
+								.code{
+									color: $link;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}

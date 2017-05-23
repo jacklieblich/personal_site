@@ -1,0 +1,110 @@
+html {
+  min-height: 100%;
+  height: 100%; }
+  html body {
+    height: 100%;
+    margin: 0; }
+    html body a {
+      text-decoration: none; }
+    html body .tabs {
+      color: #87877f; }
+      html body .tabs .open {
+        color: white; }
+    html body .content {
+      padding-top: 40px;
+      padding-bottom: 10px;
+      height: 100%;
+      display: flex;
+      box-sizing: border-box;
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto; }
+      html body .content .left {
+        width: 30%;
+        text-align: center; }
+        html body .content .left img {
+          width: 40%;
+          border-radius: 50%;
+          margin: 0 auto 20px;
+          display: block; }
+        html body .content .left a {
+          font-family: 'Roboto', sans-serif;
+          margin: 10px;
+          display: block;
+          font-size: 16px;
+          color: #698dc5; }
+          html body .content .left a.name {
+            font-size: 24px;
+            margin-bottom: 30px; }
+      html body .content .right {
+        width: 70%;
+        display: flex;
+        flex-direction: column; }
+        html body .content .right .header {
+          padding-left: 5%; }
+          html body .content .right .header h1 {
+            margin-top: 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: center; }
+          html body .content .right .header p {
+            font-family: 'Open Sans', sans-serif;
+            text-align: left; }
+        html body .content .right .text-editor {
+          background-color: #0c1021;
+          width: 90%;
+          margin: 0 auto;
+          font-family: 'Monospace', 'Consolas', 'Menlo-Regular';
+          font-size: 14px;
+          overflow: scroll;
+          height: 100%;
+          border-radius: 4px; }
+          html body .content .right .text-editor .tabs {
+            display: flex;
+            background-color: black;
+            padding-top: 5px;
+            justify-content: space-around; }
+            html body .content .right .text-editor .tabs div {
+              background-color: #35363d;
+              height: 40px;
+              width: 33%;
+              position: relative;
+              text-align: center;
+              border-radius: 4px 4px 0 0; }
+              html body .content .right .text-editor .tabs div.open {
+                background-color: #0c1021; }
+              html body .content .right .text-editor .tabs div span {
+                position: absolute;
+                display: block;
+                left: 0;
+                right: 0;
+                top: 13px;
+                margin: auto; }
+          html body .content .right .text-editor .expanded {
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px; }
+            html body .content .right .text-editor .expanded p {
+              margin-left: 20px;
+              color: white;
+              font-family: 'Monospace', 'Consolas', 'Menlo-Regular';
+              font-size: 14px; }
+            html body .content .right .text-editor .expanded > div {
+              display: none; }
+              html body .content .right .text-editor .expanded > div.open {
+                display: block; }
+            html body .content .right .text-editor .expanded .project {
+              padding-left: 20px; }
+            html body .content .right .text-editor .expanded .def {
+              color: #f2c300; }
+            html body .content .right .text-editor .expanded .method {
+              color: #f64200; }
+            html body .content .right .text-editor .expanded .code {
+              color: white;
+              padding-left: 20px;
+              display: block; }
+            html body .content .right .text-editor .expanded .link {
+              color: #698dc5; }
+            html body .content .right .text-editor .expanded a .code {
+              color: #698dc5; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,44 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="myScript.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-82832757-2', 'auto');
-  ga('send', 'pageview');
+		ga('create', 'UA-82832757-2', 'auto');
+		ga('send', 'pageview');
 
-</script>
+	</script>
 	<title>
-		Jack Lieblich's Resume Site
+		Jack Lieblich
 	</title>
 </head>
 <body>
+	<div class="content">
+		<div class="left">
+			<img src="resume_site_pic2.JPG">
+			<a href="http://jacklieblich.herokuapp.com/index.html" class="name">Jack Lieblich</a>
+			<a href="mailto:jacklieb220@gmail.com">Jacklieb220@gmail.com</a>
+			<a href ="https://github.com/jacklieblich">Github</a>
+			<a href="https://www.linkedin.com/in/jack-lieblich-a87536123
+			">LinkedIn</a>
+			<a href="https://angel.co/jack-lieblich">AngelList</a>
+		</div>
+		<div class="right">
+			<div class="header">
+				<p>Hey there!</br> Thanks for checking out my personal site.</br> Look below to learn all about my coding experience.</p>
+			</div>
+			<div class="text-editor">
+				<div class="tabs">
+					<div class="education open"><span>my.education</span></div>
+					<div class="experience"><span>professional.experience</span></div>
+					<div class="fun"><span>just.for.fun</span></div>
+				</div>
+				<div class="expanded">
+					<div class="education open">
+						<span class="def">class</span> <span class="method">Education</span>
+						<p>
+							<span class="def">def</span> <span class="method">degree</span>
+							<span class="code">
+								Rutgers '16 BA Mathematics</br>
+								Minors in Computer Science and Economics</br>
+							</span>
+							<span class="def">end</span>
+						</p>
+						<p>
+							<span class="def">def</span> <span class="method">honors</span>
+							<span class="code">Dean's List 2012, 2015, 2016</span>
+							<span class="def">end</span>
+						</p>
+						<p>
+							<span class="def">def</span> <span class="method">relevant_courses</span>
+							<span class="code">Intro to Computer Science, Data Structures, Discrete Structures I & II, Computer Architecture,  Design and Analysis of Computer Algorithms, Graph Theory
+							</span>
+							<span class="def">end</span>
+						</p>
+						<span class="def">end</span>
+					</div>
+					<div class="experience">
+						<span class="def">class</span> <span class="method">CamberCreative</span>
+						<p>
+							<span class="def">def</span> <span class="method">link</span>
+							<a href="https://www.cmbr.co"><span class="code">www.cmbr.co</span></a>
+							<span class="def">end</span>
+						</p>
+						<p>
+							<span class="def">def</span> <span class="method">dates</span>
+							<span class="code">January 2017 - now</span>
+							<span class="def">end</span>
+						</p>
+						<p>
+							<span class="def">def</span> <span class="method">job_description</span>
+							<span class="code">Full stack web developer with an emphasis on ruby on rails development and UI implementation</span>
+							<span class="def">end</span>
+						</p>
+						<p>
+							<span class="def">class</span> <span class="method">Backstory</span>
+						</p>
+						<div class="project">
+							<p>
+								<span class="def">def</span> <span class="method">link</span>
+								<a href="https://www.backthestory.com"><span class="code">Backthestory.com</span></a>
+								<span class="def">end</span>
+							</p>
+							<p>
+								<span class="def">def</span> <span class="method">description</span>
+								<span class="code">BackStory is a crowdfunding platform that enables corporations to partner with charities to fund charity campaigns. Users have personalized campaign pages where they can set donation goals and track their own impact on a campaign through other contributers that they recruit. Companies can also set and track goals through the creation of teams of users. A team's impact includes the impact of all the individual users through their own donations and those they have recruited.</span>
+								<span class="def">end</span>
+							</p>
+							<p>
+								<span class="def">def</span> <span class="method">tech_used</span>
+								<span class="code">Ruby on Rails, JavaScript, HTML, SCSS, Postgres, 'Stripe' payment API, 'Active Campaign' email marketing API</span>
+								<span class="def">end</span>
+							</p>
+						</div>
+						<p>
+							<span class="def">end</span>
+						</p>
+						<p>
+							<span class="def">class</span> <span class="method">FloridaHospitalDisney</span>
+						</p>
+						<div class="project">
+							<p>
+								<span class="def">def</span> <span class="method">link</span>
+								<a href="https://disney.floridahospitalnetwork.com/"><span class="code">disney.floridahospitalnetwork.com</span></a>
+								<span class="def">end</span>
+							</p>
+							<p>
+								<span class="def">def</span> <span class="method">description</span>
+								<span class="code">Built for Disney employees joining the Florida Hospital Network. The site has 3 main features. The home page highlighting the features and benifits of joining the network, a blog section containing posts related to health and nutrition, and a search section to find in-network physicians. Both the home page and blog section are fully customizable using a custom Drupal CMS.</span>
+								<span class="def">end</span>
+							</p>
+							<p>
+								<span class="def">def</span> <span class="method"> tech_used</span>
+								<span class="code">Drupal, PHP, JavaScript, HTML, SCSS, Google Maps API</span>
+								<span class="def">end</span>
+							</p>
+						</div>
+						<p>
+							<span class="def">end</span>
+						</p>
+						<span class="def">end</span>
+					</div>
+					<div class="fun">
+						<span class="def">class</span> <span class="method">JustForFun</span>
+						<p>
+							<span class="def">class</span> <span class="mathod">Buzzlist</span>
+						</p>
+						<div class="project">
+							<p>
+								<span class="def">def</span> <span class="method">link</span>
+								<a href="http://www.buzzlist.tv"><span class="code">buzzlist.tv</span></a>
+								<span class="def">end</span>
+							</p>
+							<p>
+								<span class="def">def</span> <span class="method">description</span>
+								<span class="code">Buzzlist is a TV based social networking app where users can post, share, and view clips and qutoes from TV shows. Each user has a personalized feed based on the users and TV shows they follow. Users can rank their favorite episodes of each TV show. Rankings are then aggregated to display the consensus best episodes of any TV show.</span>
+								<span class="def">end</span>
+							</p>
+							<p>
+								<span class="def">def</span> <span class="method">tech_used</span>
+								<span class="code">Ruby on Rails, Ruby, HTML, CSS, Javascript, jQuery, Ajax, Postgres, Heroku, Git</span>
+								<span class="def">end</span>
+							</p>
+						</div>
+						<p>
+							<span class="def">end</span>
+						</p>
+						<span class="def">end</span>
+					</div>
+				</div>
+			</div>
 
-<h1>Jack Lieblich - Your next great hire</h1>
-
-<img src="resume_site_pic2.JPG">
-
-	<h3>About Me</h3>
-	Rutgers '16 BA Mathematics</br>
-	Minors in Computer Science and Economics
-	<p>
-	Recent college graduate with a passion for web development and all things tech. Love taking on challenges and learning new things. Looking for a development job in Ruby on Rails.
-	</p>
-	<a href="mailto:jacklieb220@gmail.com">Jacklieb220@gmail.com</a></br>
-	<a href ="https://github.com/jacklieblich">Github</a></br>
-	<a href="https://www.linkedin.com/in/jack-lieblich-a87536123
-">LinkedIn</a></br>
-	<a href="https://angel.co/jack-lieblich">AngelList</a>
-	
-
-	<h3>What I've Built (so far)</h3>
-	<a href ="http://www.buzzlist.tv">BuzzList.tv</a>
-	
-
+		</div>
+	</div>
 </body>
 </html>
