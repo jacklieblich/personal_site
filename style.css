@@ -52,7 +52,8 @@ html {
         -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column; }
+        flex-direction: column;
+        height: 100%; }
         html body .content .right .header {
           padding-left: 5%; }
           html body .content .right .header h1 {
