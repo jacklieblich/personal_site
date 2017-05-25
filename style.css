@@ -1,3 +1,8 @@
+/**
+ * Media Query Mixin
+ * @param  {String} $equality:equalTo
+ * @param  {String} $device
+ */
 html {
   min-height: 100%;
   height: 100%; }
@@ -23,14 +28,53 @@ html {
       width: 90%;
       max-width: 1280px;
       margin: 0 auto; }
+      @media (max-width: 1024px) {
+        html body .content {
+          -webkit-box-direction: normal;
+          -webkit-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center;
+          height: auto;
+          width: 100%; } }
       html body .content .left {
         width: 30%;
         text-align: center; }
+        @media (max-width: 1024px) {
+          html body .content .left {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center; }
+            html body .content .left .image-wrapper {
+              width: 200px; } }
         html body .content .left img {
           width: 40%;
           border-radius: 50%;
           margin: 0 auto 20px;
           display: block; }
+          @media (max-width: 1024px) {
+            html body .content .left img {
+              width: 100%; } }
         html body .content .left a {
           font-family: 'Roboto', sans-serif;
           margin: 10px;
@@ -54,6 +98,10 @@ html {
         -ms-flex-direction: column;
         flex-direction: column;
         height: 100%; }
+        @media (max-width: 1024px) {
+          html body .content .right {
+            width: 100%;
+            height: auto; } }
         html body .content .right .header {
           padding-left: 5%; }
           html body .content .right .header h1 {
@@ -83,7 +131,12 @@ html {
             -ms-flex-pack: distribute;
             -webkit-justify-content: space-around;
             -moz-justify-content: space-around;
-            justify-content: space-around; }
+            justify-content: space-around;
+            cursor: pointer; }
+            @media (max-width: 767px) {
+              html body .content .right .text-editor .tabs {
+                flex-direction: column;
+                padding-top: 0; } }
             html body .content .right .text-editor .tabs div {
               background-color: #35363d;
               height: 40px;
@@ -91,6 +144,9 @@ html {
               position: relative;
               text-align: center;
               border-radius: 4px 4px 0 0; }
+              @media (max-width: 767px) {
+                html body .content .right .text-editor .tabs div {
+                  width: 100%; } }
               html body .content .right .text-editor .tabs div.open {
                 background-color: #0c1021; }
               html body .content .right .text-editor .tabs div span {
@@ -101,9 +157,7 @@ html {
                 top: 13px;
                 margin: auto; }
           html body .content .right .text-editor .expanded {
-            padding-top: 5px;
-            padding-left: 20px;
-            padding-right: 20px; }
+            padding: 5px 20px; }
             html body .content .right .text-editor .expanded p {
               margin-left: 20px;
               color: white;
