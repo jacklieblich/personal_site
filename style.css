@@ -120,6 +120,9 @@ html {
           overflow: scroll;
           height: 100%;
           border-radius: 4px; }
+          @media (max-width: 1024px) {
+            html body .content .right .text-editor {
+              height: auto; } }
           html body .content .right .text-editor .tabs {
             display: -webkit-box;
             display: -webkit-flex;

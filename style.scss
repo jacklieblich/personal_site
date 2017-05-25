@@ -100,6 +100,9 @@ html{
 					overflow: scroll;
 					height: 100%;
 					border-radius: 4px;
+					@include mq(lessThan, desktop){
+						height: auto;
+					}
 					.tabs{
 						@include flexbox;
 						background-color: black;
